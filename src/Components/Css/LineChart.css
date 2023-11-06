@@ -1,0 +1,27 @@
+.Chart{
+    width: 100vw;
+    height: max-content;
+    display: flex;
+    justify-content: space-between;
+    padding: 3vw 4vw;
+    align-items: center;
+}
+.Chart .Chart-title{
+  font-size: 1vw;
+}
+.Chart .Details{
+    font-size: 1vw;
+    display: flex;
+    gap: 1vw;
+}
+@media screen and (max-width: 1000px) {
+  .Chart{
+    flex-direction: column;
+  }
+  .Chart .Chart-title{
+    font-size: 3vw;
+  }
+  .Chart .Details{
+      font-size: 3vw;
+  }
+}

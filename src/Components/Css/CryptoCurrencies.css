@@ -1,0 +1,149 @@
+.CryptoCurrencies {
+    height: max-content;
+    margin-top: 0vw;
+    background-color: rgb(202, 202, 202);
+}
+
+.CryptoCurrencies .Logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.CryptoCurrencies .Logo h1 {
+    font-size: 3vw;
+    font-weight: 900;
+    padding: 0vw 2vw;
+    padding-top: 3vw;
+}
+
+
+.CryptoCurrencies .Logo h1:nth-child(2) {
+    font-size: 1.5vw;
+    cursor: pointer;
+    color: rgb(0, 67, 252);
+}
+
+
+.CryptoCurrencies .Currencies-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2vw;
+    padding: 0vw 2vw;
+    padding-bottom: 2vw;
+    place-items: center;
+    width: 100%;
+    height: max-content;
+}
+
+.CryptoCurrencies .search {
+    width: 100vw;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2vw;
+}
+
+.CryptoCurrencies .search input {
+    width: 30%;
+    height: max-content;
+    background-color: white;
+    border: 2px solid rgb(16, 127, 255);
+    outline: none;
+    display: none;
+    font-size: 1vw;
+    color: black;
+    padding: 0.7vw 2vw;
+}
+
+.CryptoCurrencies .search input::placeholder {
+    font-size: 1vw;
+}
+
+.CryptoCurrencies .Currencies-section a {
+    width: 100%;
+    height: max-content;
+    border-radius: 10px;
+    color: black;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.336) 0px 5px 15px;
+    padding:3vw;
+}
+
+.CryptoCurrencies .Currencies-section a:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.CryptoCurrencies .Currencies-section .Currencies-card .logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.CryptoCurrencies .Currencies-section .Currencies-card .title {
+    font-size: 1.3vw;
+}
+
+
+.CryptoCurrencies .Currencies-section .Currencies-card .logo img {
+    width: 3vw;
+}
+
+.CryptoCurrencies .Currencies-section .Currencies-card .details {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    font-size: 1.1vw;
+}
+@media screen and (max-width: 1000px) {
+    .CryptoCurrencies{
+        padding: 4vw 0vw;
+    }
+    .CryptoCurrencies .Logo {
+       flex-direction: column;
+    }
+    .CryptoCurrencies .Currencies-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .CryptoCurrencies .Currencies-section .Currencies-card .title {
+        font-size: 3vw;
+    }
+    
+    
+    .CryptoCurrencies .Currencies-section .Currencies-card .logo img {
+        width: 4vw;
+    }
+    
+    .CryptoCurrencies .Currencies-section .Currencies-card .details {
+        font-size: 3vw;
+    }
+    .CryptoCurrencies .Logo h1 {
+        font-size: 5vw;
+ 
+    }
+    .CryptoCurrencies .Logo h1:nth-child(2) {
+        font-size: 3vw;
+    }
+    .CryptoCurrencies .search {
+        justify-content: start;
+        padding: 2vw;
+        width: 100vw;
+      
+    }
+    
+    .CryptoCurrencies .search input {
+        border: 2px solid rgb(16, 127, 255);
+        padding: 1vw 2vw;
+        width: 50%;
+        font-size: 3vw;
+    }
+       
+    .CryptoCurrencies .search input::placeholder {
+      
+        font-size: 3vw;
+    }
+    
+    
+}

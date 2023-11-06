@@ -1,0 +1,87 @@
+.Exchange{
+    margin-top:2vw;
+    margin-bottom: 2vw;
+}
+.Exchanges-titile {
+    font-size: 2vw;
+    padding: 1vw 2vw;
+    padding-top: 0VW;
+
+}
+
+.Exchange-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    width: 100vw;
+}
+
+.Exchange-section .Exchange-card {
+    width: 100%;
+    height: max-content;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15vw;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vw 2vw;
+    padding-left: 7.5vw;
+    background-color: rgb(250, 250, 250);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.Exchange-section .Exchange-card .Exchange-card-title {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+.Exchange-section .Exchange-card img {
+    width: 3vw;
+}
+.Exchange-section .Exchange-card h1{
+    font-size: 1.2vw;
+}
+.Exchange-section .Exchange-card p{
+    font-size: 1vw;
+}
+@media screen and (max-width:1400px) {
+    .Exchange-section .Exchange-card p{
+        font-size: 1.5vw;
+    }  
+    .Exchange-section .Exchange-card h1{
+        font-size: 1.7vw;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .Exchanges-titile {
+        font-size: 4vw;
+        padding: 3vw 2vw;
+        padding-top: 0vw;
+        text-align: center;
+        margin-top: 8vw;
+    }
+    .Exchange-section .Exchange-card {
+        place-items: center;
+        gap: 0vw;
+
+        padding: 10vw;
+    }
+    .Exchange-section .Exchange-card .Exchange-card-title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;}    
+    .Exchange-section .Exchange-card img {
+        width: 3vw;
+    }
+    .Exchange-section .Exchange-card h1{
+        font-size: 3vw;
+    }
+    .Exchange-section .Exchange-card p{
+        font-size: 3.3vw;
+        font-weight: 900;
+    }
+    .Exchange-section .Exchange-card{
+        padding: 4vw 2vw;
+    }
+}
